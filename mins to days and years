@@ -1,0 +1,19 @@
+public class minstodays {
+    
+    public static void main(String[]Strings){
+    
+       double MinInYr = 60*24*365 ;
+       Scanner input = new Scanner(System.in);
+       
+    System.out.println("Enter minutes : ");
+    
+    double mins= input.nextDouble();
+    double days;
+    long years;
+    
+   days= (mins/60/24)%365;
+    years= (long) (mins/MinInYr) ;    
+    
+    System.out.println(mins+"minutes is" +years+ "years and" +days+ "days");
+    }
+}
